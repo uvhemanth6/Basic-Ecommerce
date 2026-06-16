@@ -1,6 +1,5 @@
 const userService = require("../services/userService");
 
-// Handlers translate HTTP requests into service calls.
 const createUser = async (req, res, next) => {
   try {
     const user = await userService.createUser(req.body);

@@ -1,6 +1,5 @@
 const productService = require("../services/productService");
 
-// Handlers translate HTTP requests into service calls.
 const createProduct = async (req, res, next) => {
   try {
     const product = await productService.createProduct(req.body);

@@ -30,7 +30,6 @@ app.use((req, res, next) => {
   next(error);
 });
 
-
 app.use(errorHandler);
 
 const startServer = async () => {

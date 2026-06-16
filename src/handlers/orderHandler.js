@@ -1,6 +1,5 @@
 const orderService = require("../services/orderService");
 
-// Handlers translate HTTP requests into service calls.
 const createOrder = async (req, res, next) => {
   try {
     const order = await orderService.createOrder(req.body);
